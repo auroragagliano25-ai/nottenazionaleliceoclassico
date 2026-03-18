@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Votazioni Poesie</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+            background: linear-gradient(135deg, #1c1c2e, #3a3a5f);
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+        }
+
+        img.logo {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #dcdcdc;
+        }
+
+        .qr {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(135deg, #5a7cff, #7aa2ff);
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <img src="logo.png" alt="Logo Notte Nazionale Liceo Classico" class="logo">
+
+    <h1>Votazioni per le poesie della notte nazionale del liceo classico</h1>
+    <h2>Scansiona il QR code oppure clicca il pulsante per votare</h2>
+
+    <!-- QR CODE -->
+    <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://forms.gle/cCVpVLhmKujrzX3Z8" alt="QR Code">
+    </div>
+
+    <!-- PULSANTE -->
+    <br>
+    <a href="https://forms.gle/cCVpVLhmKujrzX3Z8" class="btn" target="_blank">
+        Vai al modulo di votazione
+    </a>
+
+    <div class="footer">
+        Grazie per la tua partecipazione ✨
+    </div>
+
+</div>
+
+</body>
+</html>
